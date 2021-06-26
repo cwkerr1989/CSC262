@@ -5,6 +5,8 @@
  */
 package com.csc262.robot;
 
+import javafx.scene.image.ImageView;
+
 public class Robot {
 
 public static char grid[][]= new char[25][25]; 
@@ -17,7 +19,6 @@ Robot() {
 		xLocation = 0; 
 		yLocation = 0;  
 		payload = ' ';
-
 	}
 Robot(int x, int y, char letter) { 
 		xLocation = x;
@@ -71,7 +72,6 @@ boolean moveTo(int lx, int ly)
 			{moveUp();}
             System.out.println("Destination reached.");
 		return true;
-	
 }
 
 boolean pickUp(int lx, int ly) {      
@@ -142,9 +142,7 @@ static void print2D(){
         R2.moveTo(22,4);
         R2.pickUp(22,4);
         System.out.printf("Robot 2 location: %d, %d. Payload: %c\n", R2.getx(), R2.gety(), R2.getPayload());
-        print2D();
-        
+        print2D();    
     }
-
 }
 

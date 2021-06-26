@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 /**
  * JavaFX App
  */
@@ -17,7 +18,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("RoboGUI"), 640, 480);
+        scene = new Scene(loadFXML("RoboGUI"), 900, 525);
         stage.setScene(scene);
         stage.show();
     }
